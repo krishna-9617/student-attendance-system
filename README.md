@@ -2,7 +2,7 @@
 A simple Python program for student attendance management with marking, viewing and analysis features.
 
 ## What This Program Does
-This program helps teachers to:
+This program helps teachers to: 
 - Mark students as present or absent
 - See all attendance records
 - Check attendance percentage
