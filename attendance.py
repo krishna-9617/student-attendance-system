@@ -60,6 +60,7 @@ def main():
         elif choice == "3":
             attendance_analysis()
         elif choice== "4":
+          print("Thanks for using Student-Attendance-System")
             break
 
         else:
