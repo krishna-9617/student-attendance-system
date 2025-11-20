@@ -18,8 +18,13 @@ def markattendance():
 
 def viewattendance():
     print("\n==VIEW ATTENDANCE=='")
-    for i in attendance:
-        print(i,":",attendance[i])
+    if len(attendance)==0:
+        print("no data available")
+        return
+
+    else:
+        for i in attendance:
+            print(i,":",attendance[i])
 
 def attendance_analysis():
   print("\n==ATTENDANCE ANALYSIS==")
