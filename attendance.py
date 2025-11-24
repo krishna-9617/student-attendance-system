@@ -112,7 +112,7 @@ def main():
         print("enter 6 to edit attendance")
         print("enter 7 to delete student record")
         print("enter 8 to exit")
-        choice = input("enter the choice between 1-10: ")
+        choice = input("enter the choice between 1-8: ")
         if choice == "1":
             markattendance()
         elif choice == "2":
