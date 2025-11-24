@@ -20,11 +20,9 @@ A digital attendance system that provides:
 3. **Statistics** - Show totals and percentages
 4. **Search** - Find individual student records
 5. **Edit Records** - Modify existing entries
-6. **Filter** - View by present/absent status
 7. **Delete** - Remove student records
-8. **Count** - Quick student summary
-9. **Clear Data** - Reset entire database
-10. **User-Friendly Menu** - Easy navigation
+8. **Clear Data** - Reset entire database
+9. **User-Friendly Menu** - Easy navigation
 
 ## Benefits
 - 60-70% faster than manual systems
