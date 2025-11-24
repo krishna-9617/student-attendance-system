@@ -2,7 +2,7 @@ attendance = {}
 def markattendance():
   while True:
     print("\n==ATTENDANCE MARKING==")
-    name = input("enter the name of student [enter EXIT to exit]: ")
+    name = input("enter the name of student (enter EXIT to exit): ")
     name = name.lower()
     if(name=="exit"):
         break
@@ -35,19 +35,17 @@ def attendance_analysis():
     keys = list(attendance.values())
     present = keys.count("present")
     total = len(attendance)
-    absent = total - present
     present_per = (present/total)*100
     print("total students: ",total)
     print("present students: ",present)
-    print("absent students: ",absent)
     print("present percentage: ",present_per,"%")
 
 def clearattendance():
     print("\n==CLEAR ATTENDANCE==")
-    confirm = input("are you sure to clear all data? (yes/no): ")
+    confirm = input("are you sure ? (yes/no): ")
     if confirm == "yes":
         attendance.clear()
-        print("all data cleared")
+        print("cleared")
     else:
         print("cancelled")
 def search_student():
@@ -60,7 +58,7 @@ def search_student():
     if name in attendance:
         print(name, ":", attendance[name])
     else:
-        print("student not found")
+        print("not found")
 
 def edit_attendance():
     print("\n==EDIT ATTENDANCE==")
@@ -70,39 +68,20 @@ def edit_attendance():
     name = input("enter student name: ")
     name = name.lower()
     if name in attendance:
-        print("current status:", attendance[name])
-        status = input("enter new status (a/p): ")
+        print("name  is",attendance[name])
+        status = input("present status (a/p): ")
         status = status.lower()
         if status == "p":
             attendance[name] = "present"
-            print("updated successfully")
+            print("updated")
         elif status == "a":
             attendance[name] = "absent"
-            print("updated successfully")
+            print("updated")
         else:
             print("invalid input")
     else:
-        print("student not found")
+        print("no student found")
 
-def filter_by_status():
-    print("\n==FILTER BY STATUS==")
-    if len(attendance) == 0:
-        print("no data available")
-        return
-    choice = input("show (p)resent or (a)bsent?: ")
-    choice = choice.lower()
-    if choice == "p":
-        print("\nPRESENT STUDENTS:")
-        for i in attendance:
-            if attendance[i] == "present":
-                print(i)
-    elif choice == "a":
-        print("\nABSENT STUDENTS:")
-        for i in attendance:
-            if attendance[i] == "absent":
-                print(i)
-    else:
-        print("invalid input")
 
 def delete_student():
     print("\n==DELETE STUDENT==")
@@ -115,27 +94,11 @@ def delete_student():
         confirm = input("are you sure? (yes/no): ")
         if confirm == "yes":
             del attendance[name]
-            print("deleted successfully")
+            print("deleted ")
         else:
             print("cancelled")
     else:
-        print("student not found")
-
-def count_students():
-    print("\n==STUDENT COUNT==")
-    total = len(attendance)
-    print("total students:", total)
-    if total > 0:
-        present = 0
-        absent = 0
-        for i in attendance:
-            if attendance[i] == "present":
-                present = present + 1
-            else:
-                absent = absent + 1
-        print("present:", present)
-        print("absent:", absent)
-
+        print("no student found")
 
 
 def main():
@@ -147,10 +110,8 @@ def main():
         print("enter 4 to clear record")
         print("enter 5 to search student")
         print("enter 6 to edit attendance")
-        print("enter 7 to filter by status")
-        print("enter 8 to delete student record")
-        print("enter 9 to count students")
-        print("enter 10 to exit")
+        print("enter 7 to delete student record")
+        print("enter 8 to exit")
         choice = input("enter the choice between 1-10: ")
         if choice == "1":
             markattendance()
@@ -165,12 +126,8 @@ def main():
         elif choice == "6":
             edit_attendance()
         elif choice == "7":
-            filter_by_status()
-        elif choice == "8":
             delete_student()
-        elif choice == "9":
-            count_students()
-        elif choice == "10":
+        elif choice == "8":
             break
         else:
             print("\ninvalid input")
