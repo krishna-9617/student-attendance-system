@@ -8,13 +8,12 @@ A simple Python program to manage student attendance digitally.
 - Check attendance statistics
 - Search for students
 - Edit or delete records
-- Filter by present/absent status
 - Clear all data
 
 ## How to use:
 1. Make sure Python is installed
 2. Run: python attendance_system.py
-3. Follow the menu options (1-10)
+3. Follow the menu options (1-8)
 
 ## Features:
 1. Mark attendance
@@ -23,10 +22,8 @@ A simple Python program to manage student attendance digitally.
 4. Clear all data
 5. Search student
 6. Edit attendance
-7. Filter by status
-8. Delete student
-9. Count students
-10. Exit program
+7. Delete student
+8. Exit program
 
 ## Benefits:
 - Saves time compared to paper registers
