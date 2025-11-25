@@ -1,34 +1,55 @@
-# Student Attendance System
+#​‍​‌‍​‍‌​‍​‌‍​‍‌ Student Attendance System
 
-A simple Python program to manage student attendance digitally.
+A very basic Python program designed to digitally manage student attendance.
 
 ## What it does:
-- Add students and mark them present/absent
-- View all attendance records
-- Check attendance statistics
-- Search for students
+
+- Create a list of students and record the presence/absence of each student
+
+- View any attendance records
+
+- See attendance summary
+
+- Find students
+
 - Edit or delete records
-- Clear all data
+
+- Remove all data
 
 ## How to use:
-1. Make sure Python is installed
-2. Run: python attendance_system.py
-3. Follow the menu options (1-8)
+
+1. Verify that Python is installed on the system.
+
+2. Enter this command: python attendance_system.py
+
+3. Choose your actions by entering the corresponding number from the options list (1-8).
 
 ## Features:
+
 1. Mark attendance
-2. View records  
+
+2. View records
+
 3. Get statistics
+
 4. Clear all data
+
 5. Search student
+
 6. Edit attendance
+
 7. Delete student
+
 8. Exit program
 
 ## Benefits:
-- Saves time compared to paper registers
-- No calculation errors
-- Easy to use
+
+- More time is saved in comparison with paper registers
+
+- There will not be any errors in calculations
+
+- The program is user-friendly
+
 - Quick search and filtering
 
-Note: Data is stored in memory and lost when program closes.
+Note: All data are temporarily saved ​‍​‌‍​‍‌​‍​‌‍​‍‌in
